@@ -1,0 +1,89 @@
+body{
+    background-image: url(semlogo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.comentarios-conteiner{
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+button{
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comentario strong{
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid  #ccc;
+    margin-bottom: 5px;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+.erro-coment{
+    color: purple;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.comentario{
+    background-color: gold;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .comentarios-conteiner {
+        width: 50%; /* Ajuste maior para desktops */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .comentarios-conteiner {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em; 
+    }
+
+    button {
+        width: 100%; 
+        padding: 12px;
+    }
+
+    textarea {
+        padding: 8px; 
+    }
+}
